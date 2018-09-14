@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registration </title>
+	
+	<link rel="stylesheet" type="text/css" href="registration.css">
+	
+</head>
+
+<body bgcolor="blue">
+	<h1 align="center">REGISTRATION</h1>
+	<form action="home.php" method="POST">
+
+	<table border="1" align="center" id="table1" width="600" bgcolor="cyan" height="200" class="table1">
+		
+		<tr>
+			<td>Army no</td>
+			<td><input type="text" name="an" placeholder="army_no" required="required"></td>
+			<td>rank</td>
+			<td><select name="rn">
+				<option>--select--</option>
+				<option>lt</option>
+				<option>capt</option>
+				<option>maj</option>
+				<option>col</option>
+			</select></td>
+		</tr>
+		<tr><td>password</td>
+			<td><input type="password" name="ps" placeholder="password" required="required"></td>
+			<td>mobile</td>
+			<td><input type="text" name="mn">
+			
+		</tr>
+		<tr>
+			<td>course</td>
+			<td><input type="radio" name="course" value="advcomp" checked="checked">advcomp</td>
+			<td><input type="radio" name="course" value="mlit">mlit</td>
+			<td><input type="radio" name="course" value="itpm">itpm</td>
+		</tr>
+		<tr>
+			<td>intrested</td>
+			<td><input type="hidden" name="ai" value="0" ><input type="checkbox" name="ai" value="AI" >AI</td>
+			<td><input type="hidden" name="wa" value="0" ><input type="checkbox" name="wa" value="WEB APP">WEBAPP</td>
+			<td><input type="hidden" name="mp" value="0" ><input type="checkbox" name="mp" value="mobileapp">mobileapp</td>
+		</tr>
+		<tr align="center">
+			<td colspan="4"><input type="submit" name="submit" value="submit"></td>
+		</tr>
+	</table>
+</form>
+
+</body>
+</html>
